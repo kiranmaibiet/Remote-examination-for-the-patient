@@ -1,0 +1,296 @@
+
+.{
+
+  "intents": [
+    {
+      "intent": "any_question_regarding_doctors",
+      "examples": [
+        {
+          "text": "who_are_the_consulting_doctors"
+        },
+        {
+          "text": "doctor"
+        },
+        {
+          "text": "any question"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "hi",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hello"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "PAYMET",
+      "examples": [
+        {
+          "text": "GOOGLE PAY"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CHOOSE_TYPE_OF_CONSULTATION",
+      "examples": [
+        {
+          "text": "Good morning sir. How may I help you"
+        },
+        {
+          "text": "CONSULTATION"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "how_much_time_does_it_takes_doctors_to_reply",
+      "examples": [
+        {
+          "text": "reply"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "how_are_u",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "fine.how_u",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "for_how_long_is_the_consult_valid",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "valid",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "how_can_i_reach_u",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "send location",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "hi",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "hello",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "doctor",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "can_i_upload_later",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "no,now"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Have you registered with us earlier?",
+      "dialog_node": "node_5_1590430128267",
+      "previous_sibling": "node_1_1590430323795"
+    },
+    {
+      "type": "standard",
+      "title": "Please show me your registration card. Or I can search for your details through your mobile number.",
+      "dialog_node": "node_3_1590430166187",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Yes. I see few thin, black, wavy structures floating in front of my eyes and they don’t disappear even when I close my eyes. What are they? Are they harmful?",
+      "dialog_node": "node_6_1590430282631",
+      "previous_sibling": "node_10_1590430277560"
+    },
+    {
+      "type": "standard",
+      "title": "Yes, it was. And because I’ve taken these tests in the past too, I knew what was coming.",
+      "dialog_node": "node_1_1590430266976",
+      "previous_sibling": "node_6_1590430248441"
+    },
+    {
+      "type": "standard",
+      "title": "I’m fine. Thank you. How about you?",
+      "dialog_node": "node_1_1590430210681",
+      "previous_sibling": "node_2_1590430197185"
+    },
+    {
+      "type": "standard",
+      "title": "Good morning sir. How may I help you",
+      "dialog_node": "node_3_1590428510771",
+      "previous_sibling": "node_5_1590430128267"
+    },
+    {
+      "type": "standard",
+      "title": "You’re welcome.",
+      "dialog_node": "node_1_1590430323795",
+      "previous_sibling": "node_9_1590430312420"
+    },
+    {
+      "type": "standard",
+      "title": "Thank you doctor. Thanks for your time.",
+      "dialog_node": "node_10_1590430293675",
+      "previous_sibling": "node_6_1590430282631"
+    },
+    {
+      "type": "standard",
+      "title": "They’re called floaters, and most persons develop them to different extent as they age. They’re not harmful.",
+      "dialog_node": "node_9_1590430312420",
+      "previous_sibling": "node_10_1590430293675"
+    },
+    {
+      "type": "standard",
+      "title": "Well, that puts glaucoma thing to rest. Does your work involve working on laptop for long hours?",
+      "dialog_node": "node_10_1590430277560",
+      "previous_sibling": "node_1_1590430266976"
+    },
+    {
+      "type": "standard",
+      "title": "That’s fine.",
+      "dialog_node": "node_6_1590430248441",
+      "previous_sibling": "node_7_1590430243677"
+    },
+    {
+      "type": "standard",
+      "title": "Thank you, doctor.",
+      "dialog_node": "node_7_1590430243677",
+      "previous_sibling": "node_5_1590430229716"
+    },
+    {
+      "type": "standard",
+      "title": "Alright",
+      "dialog_node": "node_5_1590430229716",
+      "previous_sibling": "node_1_1590430210681"
+    },
+    {
+      "type": "standard",
+      "title": "Good morning doctor",
+      "dialog_node": "node_2_1590430197185",
+      "previous_sibling": "node_6_1590430191162"
+    },
+    {
+      "type": "standard",
+      "title": "You can pay the doctor consultation fee here.",
+      "dialog_node": "node_6_1590430191162",
+      "previous_sibling": "node_3_1590430166187"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1590428510771",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "PA",
+  "language": "en",
+  "description": ""
+}
